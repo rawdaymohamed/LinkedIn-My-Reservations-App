@@ -1,3 +1,14 @@
+## TODO
+
+1. Create, authorize, and redirect users
+2. Store data for users, restaurants, reservations, and more
+3. Allow profile editing
+4. Allow users to make reservations
+5. Send emails to users (for email verification)
+6. Allow users to write reviews
+7. Allow restaurants searches
+8. Store pictures for users and restaurants
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
