@@ -9,6 +9,7 @@ import {
     TextInput,
 } from '../ui';
 import { ResetPasswordForm } from './ResetPasswordForm';
+import { signIn } from './signIn';
 
 const Form = styled.div`
     width: 350px;
@@ -46,7 +47,13 @@ export const SignInForm = () => {
     const history = useHistory();
 
     const onSignInClicked = async () => {
-        // Firebase code goes here
+        try {
+
+            await signIn(emailValue, passwordValue);
+            history.push("/")
+        } catch (error) {
+            setErrorMessage(error.message);
+        }
     }
 
     const onSignInWithGoogleClicked = async () => {

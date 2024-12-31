@@ -1,8 +1,8 @@
 import { getAuth, signOut } from "firebase/auth";
 
-const auth = getAuth();
 
 export const signout = async () => {
+    const auth = getAuth();
     try {
         await signOut(auth);
     } catch (error) {
